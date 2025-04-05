@@ -4,6 +4,7 @@ from api.models import Track
 
 
 class TrackSchema(ModelSchema):
+    """ This is a track data schema. It is representation of reponse data after sending a request. """
     class Config:
         model = Track
         model_fields = ['title', 'artist', 'duration', 'last_play']
@@ -14,5 +15,6 @@ class TrackSchema(ModelSchema):
 # TrackSchema = create_schema(Track, fields=['title', 'artist', 'duration', 'last_play'])
 
 class TrackNotFoundSchema(Schema):
+    """ This is a data schema for response data if no track is found. """
     message: str
 
