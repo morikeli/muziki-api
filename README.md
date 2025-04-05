@@ -30,7 +30,6 @@ music_api/
 │   ├── schemas.py       # Pydantic schemas for request/response
 │   ├── tests.py
 │   ├── views.py         # Optional Django views
-│   └── ...
 ├── src/                 # Main Django project folder (contains core project settings and configuration)
 │   ├── __init__.py      # Marks this directory as a Python package
 │   ├── asgi.py          # ASGI config for asynchronous support (used for WebSockets, etc.)
