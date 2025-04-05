@@ -4,7 +4,7 @@
 # python binary files
 *__pycache__
 
-# migration .py files in migrations dir
-migrations/*.py
+# .py files in migrations dir
+*migrations/
 
 .qodo
