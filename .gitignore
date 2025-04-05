@@ -1,0 +1,10 @@
+# virtual environment
+*venv/
+
+# python binary files
+*__pycache__
+
+# migration .py files in migrations dir
+migrations/*.py
+
+.qodo
