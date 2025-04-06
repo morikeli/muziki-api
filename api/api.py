@@ -107,3 +107,14 @@ def delete_track(request, track_id: int):
     
     except Track.DoesNotExist as e:
         return 404, {'message': 'Track does not exist'}
+
+
+@app.post('/upload-file')
+def upload_file(request, file: UploadedFile = File(...)):
+    data = file.read().decode('utf-8', errors='ignore')
+
+    return {
+        'name': file.name,
+        'size': len(data),
+        'content_type': file.content_type,
+    }
