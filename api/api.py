@@ -1,6 +1,7 @@
 from api.models import Track
 from api.schemas import TrackSchema, TrackNotFoundSchema
-from ninja import NinjaAPI
+from ninja import NinjaAPI, File
+from ninja.files import UploadedFile
 from typing import List, Optional
 
 
