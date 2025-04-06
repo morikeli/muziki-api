@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+def load_message(request):
+    return render(request, 'messages.html')
+
+def index_view(request):
+    return render(request, 'index.html')
